@@ -12,8 +12,10 @@ frontend/dist/
 backend/*.exe
 backend/*.test
 
-# OS & Editor
+# OS & Editor & Agent Specs
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+.agents/
+spesifikasi_sistem_catat.md
