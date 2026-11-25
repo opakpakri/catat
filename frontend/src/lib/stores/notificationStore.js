@@ -44,10 +44,12 @@ function createNotificationStore() {
 
   async function ensureSW() {
     if (typeof navigator === 'undefined' || !('serviceWorker' in navigator)) return null;
-    if (swReg) return swReg;
     try {
-      swReg = await navigator.serviceWorker.register('/sw.js');
-      return swReg;
+      if (!swReg) {
+        swReg = await navigator.serviceWorker.register('/sw.js');
+      }
+      const readyReg = await navigator.serviceWorker.ready;
+      return readyReg || swReg;
     } catch {
       return null;
     }
