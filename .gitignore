@@ -1,0 +1,19 @@
+# Environments
+.env
+backend/.env
+*.env.local
+
+# Dependencies & Build Outputs
+node_modules/
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+frontend/dist/
+backend/*.exe
+backend/*.test
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
