@@ -126,9 +126,9 @@
               aria-label={showPassword ? 'Sembunyikan password' : 'Lihat password'}
             >
               {#if showPassword}
-                <EyeOff class="w-4 h-4" />
-              {:else}
                 <Eye class="w-4 h-4" />
+              {:else}
+                <EyeOff class="w-4 h-4" />
               {/if}
             </button>
           </div>
